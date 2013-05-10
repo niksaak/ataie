@@ -5,9 +5,8 @@
 
 int help(char* name)
 {
-  printf("\nataie -- archive tool for aie\n"
+  printf("ataie -- archive tool for aie\n"
          "usage:  %s <archive-name>\n", name);
-
   return 1;
 }
 
