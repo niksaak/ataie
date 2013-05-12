@@ -37,5 +37,5 @@ $(OBJECTS): aie
 
 clean:
 	@-$(RM) -v $(OBJECTS) ;\
-	  $(RM) -v $(NAME) ;\
+	  $(RM) -v $(EXE) ;\
 	  $(MAKE) -C aie/ clean
