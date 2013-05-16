@@ -27,7 +27,7 @@ int main(int argc, char** argv)
   puts("Attempt to read and print archive table...\n");
   for(int i = 0; i < arc.table->unitc; i++) {
     aie_ArcUnit u = aie_arctable_get(arc.table, i);
-    printf("%s %zuB\n", u.name, aie_arcsegment_sumsize(u.segments));
+    printf("%-23s %zuB\n", u.name, aie_arcsegment_sumsize(u.segments));
   }
 
   aie_kmarchive(&arc);
